@@ -26,4 +26,11 @@ int main()
         brojKlijenata ++;
 
     }
+    else if (izbor == 2)
+    {
+        for (int i = 0; i < brojKlijenata; i++)
+        {
+            cout << brRacuna[i] << " " << prezimeime[i] << " saldo:" << saldo[i] << endl;
+        }
+    }
 }
