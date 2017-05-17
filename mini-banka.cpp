@@ -11,4 +11,18 @@ int main()
     cout << "5. Ispisi sortirano" << endl;
     int izbor;
     cin >> izbor;
+
+    unsigned long long int brRacuna[50];
+    string prezimeime[50];
+    float saldo [50];
+    int brojKlijenata = 0;
+    if( izbor == 1)
+    {
+        cout << "Unesite broj racuna";
+          cout << "Unesite prezime i ime" << endl;
+        getline(cin, prezimeime[brojKlijenata]);
+        saldo[brojKlijenata] = 0;
+        brojKlijenata ++;
+
+    }
 }
