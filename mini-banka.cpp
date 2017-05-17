@@ -21,6 +21,7 @@ int main()
         cout << "Unesite broj racuna";
         cin >> brRacuna[brojKlijenata];
         cout << "Unesite prezime i ime" << endl;
+        cin.ignore();
         getline(cin, prezimeime[brojKlijenata]);
         saldo[brojKlijenata] = 0;
         brojKlijenata ++;
@@ -31,6 +32,20 @@ int main()
         for (int i = 0; i < brojKlijenata; i++)
         {
             cout << brRacuna[i] << " " << prezimeime[i] << " saldo:" << saldo[i] << endl;
+        }
+    }
+    else if ( izbor == 3)
+    {
+        cout << "unesite broje racuna koji zelite pronaci: ";
+        unsigned int brracunaKojiTrazimo;
+        cin >> brRacunaKojiTrazimo;
+        for(int i = 0; i< brojKlijenata;i++)
+        {
+            if(brracunaKojiTrazimo == brRacuna[i])
+            {
+                cout << " Osoba je pronadjena. " << endl;
+                break;
+            }
         }
     }
 }
