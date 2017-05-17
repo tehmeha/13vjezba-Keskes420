@@ -19,7 +19,8 @@ int main()
     if( izbor == 1)
     {
         cout << "Unesite broj racuna";
-          cout << "Unesite prezime i ime" << endl;
+        cin >> brRacuna[brojKlijenata];
+        cout << "Unesite prezime i ime" << endl;
         getline(cin, prezimeime[brojKlijenata]);
         saldo[brojKlijenata] = 0;
         brojKlijenata ++;
