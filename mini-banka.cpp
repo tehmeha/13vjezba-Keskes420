@@ -105,7 +105,7 @@ int main()
         else if ( izbor == 5)
         {
         int n = brojKlijenata;
-        int temp;
+        string temp;
         for (int kraj = n-1; kraj >=0; kraj --)
         {
 
